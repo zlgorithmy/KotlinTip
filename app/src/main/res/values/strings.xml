@@ -1,0 +1,31 @@
+<resources>
+    <string name="app_name">KotlinTip</string>
+    <string name="btn_layout">布局</string>
+    <string name="btn_control">控件</string>
+    <string name="LinearLayout">线性布局</string>
+    <string name="FrameLayout">帧布局</string>
+    <string name="one">ONE</string>
+    <string name="two">TWO</string>
+    <string name="three">THREE</string>
+    <string name="four">FOUR</string>
+    <string name="five">FIVE</string>
+    <string name="center">CENTER</string>
+    <string name="defaults">DEFAULT</string>
+    <string name="top_center">TOP_CENTER</string>
+    <string name="top_end">TOP_END</string>
+    <string name="start_center">START_CENTER</string>
+    <string name="end_center">END_CENTER</string>
+    <string name="bottom_start">BOTTOM_START</string>
+    <string name="bottom_center">BOTTOM_CENTER</string>
+    <string name="bottom_end">BOTTOM_END</string>
+    <string name="RelativeLayout">相对布局</string>
+    <string name="top">TOP</string>
+    <string name="bottom">BOTTOM</string>
+    <string name="left">LEFT</string>
+    <string name="right">RIGHT</string>
+    <string name="TableLayout">表格布局</string>
+    <string name="text">TEXT</string>
+    <string name="AbsoluteLayout">绝对布局</string>
+    <string name="ConstraintLayout">约束布局</string>
+    <string name="TextView">TextView</string>
+</resources>

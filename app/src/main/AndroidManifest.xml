@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.zlgorithmy.kotlintip">
+
+    <application
+        android:allowBackup="false"
+        android:icon="@drawable/kotlin192"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".layout.ConstraintLayoutActivity"></activity>
+        <activity android:name=".layout.AbsoluteLayoutActivity" />
+        <activity android:name=".layout.TableLayoutActivity" />
+        <activity android:name=".layout.RelativeLayoutActivity" />
+        <activity android:name=".layout.FrameLayoutActivity" />
+        <activity android:name=".layout.LinearLayoutActivity" />
+        <activity android:name=".ControlActivity" />
+        <activity android:name=".LayoutActivity" />
+
+        <meta-data
+            android:name="android.max_aspect"
+            android:value="2.4" />
+        <meta-data
+            android:name="android.notch_support"
+            android:value="true" />
+        <meta-data
+            android:name="notch.config"
+            android:value="portrait|landscape" />
+
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

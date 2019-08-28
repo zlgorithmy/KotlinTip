@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E64A19"
+    tools:context=".layout.FrameLayoutActivity">
+
+    <TextView
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:layout_gravity="center"
+        android:background="#FF6143"
+        android:gravity="top|center"
+        android:text="@string/one"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="150dp"
+        android:layout_height="150dp"
+        android:layout_gravity="center"
+        android:background="#7BFE00"
+        android:gravity="top|center"
+        android:text="@string/two"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="center"
+        android:background="#00FFFF"
+        android:gravity="top|center"
+        android:text="@string/three"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="50dp"
+        android:layout_height="50dp"
+        android:layout_gravity="center"
+        android:background="#0097A7"
+        android:gravity="center"
+        android:text="@string/center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:background="#FF0000"
+        android:gravity="center"
+        android:text="@string/defaults"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|center"
+        android:background="#00FF00"
+        android:gravity="center"
+        android:text="@string/top_center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="top|end"
+        android:background="#0000FF"
+        android:gravity="center"
+        android:text="@string/top_end"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="start|center"
+        android:background="#FFFF00"
+        android:gravity="center"
+        android:text="@string/start_center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="end|center"
+        android:background="#FF00FF"
+        android:gravity="center"
+        android:text="@string/end_center"
+        android:textSize="25sp" />
+
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|start"
+        android:background="#9FA8DA"
+        android:gravity="center"
+        android:text="@string/bottom_start"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|center"
+        android:background="#7F7F7F"
+        android:gravity="center"
+        android:text="@string/bottom_center"
+        android:textSize="25sp" />
+    <TextView
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_gravity="bottom|end"
+        android:background="#FFFFFF"
+        android:gravity="center"
+        android:text="@string/bottom_end"
+        android:textSize="25sp" />
+</FrameLayout>

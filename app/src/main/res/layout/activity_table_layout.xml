@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<TableLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_centerInParent="true"
+    android:background="#FFA726"
+    android:orientation="vertical"
+    android:shrinkColumns="0,1,2"
+    android:stretchColumns="0,1,2"
+    tools:context=".layout.TableLayoutActivity">
+
+    <TextView
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_marginTop="100dp"
+        android:background="@color/colorAccent"
+        android:gravity="center"
+        android:text="@string/text"
+        android:textSize="40sp" />
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:gravity="center">
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:background="#26C6DA"
+            android:text="@string/one" />
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:background="#FF7043"
+            android:text="@string/two" />
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:background="#5C6BC0"
+            android:text="@string/three" />
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_weight="1"
+            android:background="#FFCA28"
+            android:text="@string/one" />
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:layout_weight="10000"
+            android:background="#7E57C2"
+            android:text="@string/two" />
+
+    </TableRow>
+
+    <TableRow
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:background="#66BB6A"
+            android:text="@string/one" />
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:background="#EC407A"
+            android:text="@string/two" />
+
+        <Button
+            style="@style/TextAppearance.AppCompat.Headline"
+            android:background="#26A69A"
+            android:text="@string/three" />
+    </TableRow>
+</TableLayout>

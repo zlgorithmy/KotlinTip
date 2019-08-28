@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AbsoluteLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#5C6BC0"
+    tools:context=".layout.AbsoluteLayoutActivity">
+
+    <Button
+        android:id="@+id/button"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="236dp"
+        android:layout_y="94dp"
+        android:background="#FF7043"
+        android:text="@string/one" />
+
+    <Button
+        android:id="@+id/button2"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="143dp"
+        android:layout_y="166dp"
+        android:background="#9CCC65"
+        android:text="@string/two" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/TextAppearance.AppCompat.Headline"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_x="33dp"
+        android:layout_y="263dp"
+        android:background="#EC407A"
+        android:text="@string/three" />
+</AbsoluteLayout>
