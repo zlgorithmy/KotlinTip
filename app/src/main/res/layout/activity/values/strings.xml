@@ -1,0 +1,47 @@
+<resources>
+    <string name="title_activity_settings">Settings</string>
+
+    <!-- Preference Titles -->
+    <string name="messages_header">Messages</string>
+    <string name="sync_header">Sync</string>
+
+    <!-- Messages Preferences -->
+    <string name="signature_title">Your signature</string>
+    <string name="reply_title">Default reply action</string>
+
+    <!-- Sync Preferences -->
+    <string name="sync_title">Sync email periodically</string>
+    <string name="attachment_title">Download incoming attachments</string>
+    <string name="attachment_summary_on">Automatically download attachments for incoming emails
+    </string>
+    <string name="attachment_summary_off">Only download attachments when manually requested</string>
+    <string name="scrollview">ScrollView</string>
+    <string name="Switch">SWITCH</string>
+    <string name="editText">EditText</string>
+    <string name="hint">Hint</string>
+    <string name="password">Password</string>
+    <string name="email">textEmailAddress</string>
+    <string name="phone">phone</string>
+    <string name="textPassword">textPassword</string>
+    <string name="numberPassword">numberPassword</string>
+    <string name="textPostalAddress">textPostalAddress</string>
+    <string name="textMultiLine">textMultiLine</string>
+    <string name="time">time</string>
+    <string name="date">date</string>
+    <string name="number">number</string>
+    <string name="numberSigned">numberSigned</string>
+    <string name="numberDecimal">numberDecimal</string>
+    <string name="autoCompleteTextView">AutoCompleteTextView</string>
+    <string name="multiAutoCompleteTextView">MultiAutoCompleteTextView</string>
+    <string name="checkedTextView">CheckedTextView</string>
+    <string name="imageButton">ImageButton</string>
+    <string name="chip">Chip</string>
+    <string name="checkBox">CheckBox</string>
+    <string name="radioButton">RadioButton</string>
+    <string name="off">OFF</string>
+    <string name="on">ON</string>
+    <string name="view">Widgets</string>
+    <string name="cardView">CardView</string>
+    <string name="todo">TODO</string>
+    <string name="kotlin">Kotlin</string>
+</resources>

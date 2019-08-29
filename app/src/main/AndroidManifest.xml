@@ -3,20 +3,27 @@
     xmlns:tools="http://schemas.android.com/tools"
     package="com.zlgorithmy.kotlintip">
 
+    <uses-permission android:name="android.permission.INTERNET" />
     <application
         android:allowBackup="false"
         android:icon="@drawable/kotlin192"
         android:label="@string/app_name"
         android:supportsRtl="true"
         android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
-        <activity android:name=".layout.ConstraintLayoutActivity"></activity>
+        <activity
+            android:name=".setting.SettingsActivity"
+            android:label="@string/title_activity_settings" />
+        <activity android:name=".layout.ConstraintLayoutActivity" />
         <activity android:name=".layout.AbsoluteLayoutActivity" />
         <activity android:name=".layout.TableLayoutActivity" />
         <activity android:name=".layout.RelativeLayoutActivity" />
         <activity android:name=".layout.FrameLayoutActivity" />
         <activity android:name=".layout.LinearLayoutActivity" />
-        <activity android:name=".ControlActivity" />
+        <activity
+            android:name=".ControlActivity"
+            android:theme="@style/AppTheme1" />
         <activity android:name=".LayoutActivity" />
 
         <meta-data
