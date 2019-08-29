@@ -28,4 +28,5 @@
     <string name="AbsoluteLayout">绝对布局</string>
     <string name="ConstraintLayout">约束布局</string>
     <string name="TextView">TextView</string>
+    <string name="Button">Button</string>
 </resources>
