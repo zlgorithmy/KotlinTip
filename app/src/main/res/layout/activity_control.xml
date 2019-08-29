@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@drawable/kyoo_pal"
+    android:background="@drawable/emerald_water"
     tools:context=".ControlActivity">
 
     <TextView
@@ -12,7 +12,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:background="@drawable/lemon_twist"
+        android:background="@drawable/king_yna"
         android:gravity="center"
         android:text="@string/TextView"
         android:textSize="30sp"
@@ -25,7 +25,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="100dp"
-        android:background="@drawable/lemon_twist"
+        android:background="@drawable/kyoo_pal"
         android:gravity="center"
         android:text="@string/Button"
         android:textSize="30sp"
