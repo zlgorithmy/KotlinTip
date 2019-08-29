@@ -44,4 +44,5 @@
     <string name="cardView">CardView</string>
     <string name="todo">TODO</string>
     <string name="kotlin">Kotlin</string>
+    <string name="containers">Containers</string>
 </resources>
