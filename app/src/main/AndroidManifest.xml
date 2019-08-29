@@ -14,7 +14,8 @@
         tools:ignore="GoogleAppIndexingWarning">
         <activity
             android:name=".setting.SettingsActivity"
-            android:label="@string/title_activity_settings" />
+            android:label="@string/title_activity_settings"
+            android:theme="@style/AppTheme2" />
         <activity android:name=".layout.ConstraintLayoutActivity" />
         <activity android:name=".layout.AbsoluteLayoutActivity" />
         <activity android:name=".layout.TableLayoutActivity" />

@@ -1,12 +1,12 @@
 package com.zlgorithmy.kotlintip
 
+import android.app.Activity
 import android.os.Bundle
-import androidx.appcompat.app.AppCompatActivity
 import com.zlgorithmy.kotlintip.layout.*
 import kotlinx.android.synthetic.main.activity_layout.*
 import org.jetbrains.anko.startActivity
 
-class LayoutActivity : AppCompatActivity() {
+class LayoutActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
