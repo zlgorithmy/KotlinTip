@@ -43,7 +43,7 @@
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:background="@drawable/kotlin192"
+            android:background="@drawable/ic_alarm_add_black_24dp"
             android:contentDescription="@string/imageButton"
             android:tooltipText="@string/hint" />
 

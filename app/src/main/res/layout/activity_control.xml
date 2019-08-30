@@ -27,7 +27,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="2dp"
-        android:background="@drawable/kyoo_pal"
+        android:background="@drawable/ic_stat_name2"
         android:gravity="center"
         android:text="@string/Button"
         android:textSize="30sp"

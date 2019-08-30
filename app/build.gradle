@@ -20,15 +20,14 @@ android {
         }
     }
     sourceSets {
-        main.res.srcDirs =
-                [
-                        'src/main/res/layout/activity',
-                        'src/main/res/layout/control',
-                        //下面两个是固定兼容写法
-                        'src/main/res/layout',
-                        'src/main/res'
-                ]
-
+        main {
+            res.srcDirs = ['src/main/res',
+                           'src/main/res/2',
+                           'src/main/res/layout/activity',
+                           'src/main/res/layout/control',
+                           //下面两个是固定兼容写法
+                           'src/main/res/layout']
+        }
     }
 }
 
