@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/memariani"
+    android:orientation="vertical"
+    android:scrollbars="none"
+    tools:context=".common.TextViewsActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:layout_marginBottom="20dp"
+        android:background="@drawable/ali"
+        android:orientation="vertical"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <TextView
+                android:id="@+id/text"
+                style="@style/TextView"
+                android:background="@drawable/king_yna"
+                android:text="@string/TextView" />
+
+            <EditText
+                android:id="@+id/editText"
+                style="@style/TextView"
+                android:background="@drawable/lemon_twist"
+                android:hint="@string/editText"
+                android:importantForAutofill="no"
+                android:inputType="textPersonName"
+                android:imeOptions="actionDone"/>
+
+            <EditText
+                android:id="@+id/editText2"
+                style="@style/TextView"
+                android:background="@drawable/j_shine"
+                android:hint="@string/textPassword"
+                android:importantForAutofill="no"
+                android:inputType="textPassword" />
+
+            <EditText
+                android:id="@+id/editText3"
+                style="@style/TextView"
+                android:background="@drawable/evening_sunshine"
+                android:hint="@string/numberPassword"
+                android:importantForAutofill="no"
+                android:inputType="numberPassword" />
+
+            <EditText
+                android:id="@+id/editText4"
+                style="@style/TextView"
+                android:background="@drawable/memariani"
+                android:hint="@string/email"
+                android:importantForAutofill="no"
+                android:inputType="textEmailAddress" />
+
+            <EditText
+                android:id="@+id/editText5"
+                style="@style/TextView"
+                android:background="@drawable/evening_sunshine"
+                android:hint="@string/phone"
+                android:importantForAutofill="no"
+                android:inputType="phone" />
+
+            <EditText
+                android:id="@+id/editText6"
+                style="@style/TextView"
+                android:background="@drawable/ali"
+                android:hint="@string/textPostalAddress"
+                android:importantForAutofill="no"
+                android:inputType="textPostalAddress" />
+
+            <EditText
+                android:id="@+id/editText7"
+                style="@style/TextView"
+                android:background="@drawable/pizelex"
+                android:hint="@string/textMultiLine"
+                android:importantForAutofill="no"
+                android:inputType="textMultiLine" />
+
+            <EditText
+                android:id="@+id/editText8"
+                style="@style/TextView"
+                android:background="@drawable/back_to_earth"
+                android:hint="@string/time"
+                android:importantForAutofill="no"
+                android:inputType="time" />
+
+            <EditText
+                android:id="@+id/editText9"
+                style="@style/TextView"
+                android:background="@drawable/sel"
+                android:hint="@string/date"
+                android:importantForAutofill="no"
+                android:inputType="date" />
+
+            <EditText
+                android:id="@+id/editText10"
+                style="@style/TextView"
+                android:background="@drawable/candy"
+                android:hint="@string/number"
+                android:importantForAutofill="no"
+                android:inputType="number" />
+
+            <EditText
+                android:id="@+id/editText11"
+                style="@style/TextView"
+                android:background="@drawable/teal_love"
+                android:hint="@string/numberSigned"
+                android:importantForAutofill="no"
+                android:inputType="numberSigned" />
+
+            <EditText
+                android:id="@+id/editText12"
+                style="@style/TextView"
+                android:background="@drawable/quepal"
+                android:hint="@string/numberDecimal"
+                android:importantForAutofill="no"
+                android:inputType="numberDecimal" />
+
+            <AutoCompleteTextView
+                android:id="@+id/autoCompleteTextView"
+                style="@style/TextView"
+                android:background="@drawable/summer_dog"
+                android:hint="@string/autoCompleteTextView" />
+
+            <MultiAutoCompleteTextView
+                android:id="@+id/multiAutoCompleteTextView"
+                style="@style/TextView"
+                android:background="@drawable/summer"
+                android:hint="@string/multiAutoCompleteTextView" />
+
+            <CheckedTextView
+                android:id="@+id/checkedTextView"
+                style="@style/TextView"
+                android:background="@drawable/ali"
+                android:hint="@string/checkedTextView" />
+
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <com.google.android.material.textfield.TextInputEditText
+                    style="@style/TextView"
+                    android:background="@drawable/quepal"
+                    android:hint="@string/textInputEditText" />
+            </com.google.android.material.textfield.TextInputLayout>
+
+            <com.google.android.material.chip.ChipGroup
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:background="@drawable/candy">
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Entry"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Action"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip" />
+
+                <com.google.android.material.chip.Chip
+                    style="@style/Widget.MaterialComponents.Chip.Choice"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip" />
+
+                <com.google.android.material.chip.Chip
+                    android:id="@+id/chipInGroup2"
+                    style="@style/Widget.MaterialComponents.Chip.Filter"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="@string/chip"
+                    android:textAppearance="?android:textAppearanceMedium" />
+            </com.google.android.material.chip.ChipGroup>
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

@@ -9,234 +9,25 @@
     tools:context=".ControlActivity">
 
     <LinearLayout
+        android:elevation="10dp"
+        android:background="@drawable/ali"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
         android:orientation="vertical">
 
-        <TextView
-            android:id="@+id/text"
-            style="@style/TextAppearance.AppCompat.Headline"
+        <Button
+            android:elevation="10dp"
+            android:background="@drawable/candy"
+            android:id="@+id/mBtn_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginTop="50dp"
-            android:background="@drawable/king_yna"
             android:gravity="center"
             android:text="@string/TextView"
             android:textSize="30sp" />
 
-        <EditText
-            android:id="@+id/editText"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints="@string/hint"
-            android:background="@drawable/lemon_twist"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/editText"
-            android:inputType="textPersonName"
-            android:textColor="@color/blue_grey"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText2"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints="password"
-            android:background="@drawable/j_shine"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/textPassword"
-            android:inputType="textPassword"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText3"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:autofillHints=""
-            android:background="@drawable/evening_sunshine"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/numberPassword"
-            android:inputType="numberPassword"
-            android:textSize="30sp"
-            tools:ignore="LabelFor" />
-
-        <EditText
-            android:id="@+id/editText4"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/memariani"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/email"
-            android:importantForAutofill="no"
-            android:inputType="textEmailAddress"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText5"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/evening_sunshine"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/phone"
-            android:importantForAutofill="no"
-            android:inputType="phone"
-            android:labelFor="@+id/editText5"
-            android:textSize="30sp"
-            tools:ignore="LabelFor" />
-
-        <EditText
-            android:id="@+id/editText6"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ali"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/textPostalAddress"
-            android:importantForAutofill="no"
-            android:inputType="textPostalAddress"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText7"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pizelex"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/textMultiLine"
-            android:importantForAutofill="no"
-            android:inputType="textMultiLine"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText8"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/back_to_earth"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/time"
-            android:importantForAutofill="no"
-            android:inputType="time"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText9"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/sel"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/date"
-            android:importantForAutofill="no"
-            android:inputType="date"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText10"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/candy"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/number"
-            android:importantForAutofill="no"
-            android:inputType="number"
-            android:textSize="30sp" />
-
-        <EditText
-            android:id="@+id/editText11"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/teal_love"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/numberSigned"
-            android:importantForAutofill="no"
-            android:inputType="numberSigned"
-            android:textSize="30sp"
-            tools:ignore="LabelFor" />
-
-        <EditText
-            android:id="@+id/editText12"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/quepal"
-            android:ems="10"
-            android:gravity="center"
-            android:hint="@string/numberDecimal"
-            android:importantForAutofill="no"
-            android:inputType="numberDecimal"
-            android:textSize="30sp" />
-
-        <AutoCompleteTextView
-            android:id="@+id/autoCompleteTextView"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/summer_dog"
-            android:gravity="center"
-            android:hint="@string/autoCompleteTextView"
-            android:textSize="30sp" />
-
-        <MultiAutoCompleteTextView
-            android:id="@+id/multiAutoCompleteTextView"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/summer"
-            android:gravity="center"
-            android:hint="@string/multiAutoCompleteTextView"
-            android:textSize="30sp"
-            tools:ignore="LabelFor" />
-
-        <CheckedTextView
-            android:id="@+id/checkedTextView"
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ali"
-            android:gravity="center"
-            android:hint="@string/checkedTextView"
-            android:textSize="30sp" />
-
-        <com.google.android.material.textfield.TextInputLayout
-            style="@style/TextAppearance.AppCompat.Headline"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent">
-
-            <com.google.android.material.textfield.TextInputEditText
-                style="@style/TextAppearance.AppCompat.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/quepal"
-                android:gravity="center"
-                android:hint="@string/hint"
-                android:textSize="30sp" />
-        </com.google.android.material.textfield.TextInputLayout>
-
-        <View
-            android:layout_width="match_parent"
-            android:layout_height="1dp"
-            android:background="@drawable/king_yna" />
-
         <Button
+            android:elevation="20dp"
             android:id="@+id/button"
             style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="match_parent"
@@ -245,51 +36,16 @@
             android:background="@drawable/kyoo_pal"
             android:gravity="center"
             android:text="@string/Button"
-            android:textSize="30sp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/text" />
+            android:textSize="30sp" />
 
         <ImageButton
+            android:elevation="20dp"
             android:id="@+id/imageButton"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:background="@drawable/kotlin192"
             android:contentDescription="@string/imageButton"
             android:tooltipText="@string/hint" />
-
-        <com.google.android.material.chip.ChipGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/candy">
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Entry"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/chip" />
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Action"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/chip" />
-
-            <com.google.android.material.chip.Chip
-                style="@style/Widget.MaterialComponents.Chip.Choice"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/chip" />
-
-            <com.google.android.material.chip.Chip
-                android:id="@+id/chipInGroup2"
-                style="@style/Widget.MaterialComponents.Chip.Filter"
-                android:layout_width="wrap_content"
-                android:layout_height="wrap_content"
-                android:text="@string/chip"
-                android:textAppearance="?android:textAppearanceMedium" />
-        </com.google.android.material.chip.ChipGroup>
-
 
         <CheckBox
             android:id="@+id/checkBox"

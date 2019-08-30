@@ -13,6 +13,7 @@ import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
 import com.zlgorithmy.kotlintip.adapter.KotlinRecycleAdapter
+import com.zlgorithmy.kotlintip.common.TextViewsActivity
 import com.zlgorithmy.kotlintip.setting.SettingsActivity
 import kotlinx.android.synthetic.main.activity_control.*
 import org.jetbrains.anko.selector
@@ -35,6 +36,7 @@ class ControlActivity : AppCompatActivity() {
 
     private fun initBtn() {
         button?.setOnClickListener { startActivity<SettingsActivity>() }
+        mBtn_TextView?.setOnClickListener { startActivity<TextViewsActivity>() }
     }
 
     private fun initRecyclerView() {

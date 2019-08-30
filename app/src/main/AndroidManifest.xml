@@ -4,6 +4,7 @@
     package="com.zlgorithmy.kotlintip">
 
     <uses-permission android:name="android.permission.INTERNET" />
+
     <application
         android:allowBackup="false"
         android:icon="@drawable/kotlin192"
@@ -12,6 +13,9 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity
+            android:name=".common.TextViewsActivity"
+            android:theme="@style/AppTheme1" />
         <activity
             android:name=".setting.SettingsActivity"
             android:label="@string/title_activity_settings"
@@ -24,7 +28,7 @@
         <activity android:name=".layout.LinearLayoutActivity" />
         <activity
             android:name=".ControlActivity"
-            android:theme="@style/AppTheme1" />
+            android:theme="@style/AppTheme2" />
         <activity android:name=".LayoutActivity" />
 
         <meta-data
