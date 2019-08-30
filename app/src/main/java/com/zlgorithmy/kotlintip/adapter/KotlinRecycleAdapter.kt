@@ -45,5 +45,4 @@ class KotlinRecycleAdapter(mContext: Context, private var list: Array<String>) :
     interface IKotlinItemClickListener {
         fun onItemClickListener(position: String)
     }
-
 }

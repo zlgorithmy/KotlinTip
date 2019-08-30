@@ -460,9 +460,13 @@
             android:layout_height="100dp" />
 
         <androidx.cardview.widget.CardView
+            android:id="@+id/mCardView"
+            style="@style/AppCardView"
             android:layout_width="300dp"
             android:layout_height="200dp"
             android:layout_gravity="center"
+            android:clickable="true"
+            android:focusable="true"
             app:cardCornerRadius="40dp"
             app:cardElevation="50dp">
 
@@ -498,22 +502,22 @@
 
         <TextView
             android:id="@+id/spinnerText"
-            android:gravity="center"
-            android:background="@drawable/opa"
             style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="20dp"
+            android:background="@drawable/opa"
+            android:gravity="center"
             android:text="@string/containers"
             android:textSize="30sp" />
 
         <Spinner
-            android:prompt="@string/scrollview"
-            android:background="@drawable/love_couple"
             android:id="@+id/spinner"
-            android:popupElevation="10dp"
-            android:popupBackground="@drawable/teal_love"
             android:layout_width="match_parent"
-            android:layout_height="wrap_content" />
+            android:layout_height="wrap_content"
+            android:background="@drawable/love_couple"
+            android:popupBackground="@drawable/teal_love"
+            android:popupElevation="10dp"
+            android:prompt="@string/scrollview" />
     </LinearLayout>
 </ScrollView>

@@ -101,12 +101,19 @@ class ControlActivity : AppCompatActivity() {
         }
     }
 
+    private fun initCardView() {
+        mCardView?.setOnClickListener {
+            toast("CardView")
+        }
+    }
+
     private fun initView() {
         initBtn()
         initRecyclerView()
         initWeb()
         initVideo()
         initSpinner()
+        initCardView()
     }
 
     internal inner class myItemClickListener : AdapterView.OnItemSelectedListener {
