@@ -1,4 +1,4 @@
-package com.zlgorithmy.kotlintip.texts
+package com.zlgorithmy.kotlintip.activities.texts
 
 import android.app.Activity
 import android.os.Bundle

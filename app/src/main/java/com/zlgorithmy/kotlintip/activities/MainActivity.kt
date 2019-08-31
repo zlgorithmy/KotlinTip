@@ -1,8 +1,9 @@
-package com.zlgorithmy.kotlintip
+package com.zlgorithmy.kotlintip.activities
 
 import android.app.Activity
 import android.content.Intent
 import android.os.Bundle
+import com.zlgorithmy.kotlintip.R
 import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : Activity() {

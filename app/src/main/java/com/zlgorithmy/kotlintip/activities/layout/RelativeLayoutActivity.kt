@@ -1,13 +1,13 @@
-package com.zlgorithmy.kotlintip.layout
+package com.zlgorithmy.kotlintip.activities.layout
 
 import android.app.Activity
 import android.os.Bundle
 import com.zlgorithmy.kotlintip.R
 
-class FrameLayoutActivity : Activity() {
+class RelativeLayoutActivity : Activity() {
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_frame_layout)
+        setContentView(R.layout.activity_relative_layout)
     }
 }

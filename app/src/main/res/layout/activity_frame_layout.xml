@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="#E64A19"
-    tools:context=".layout.FrameLayoutActivity">
+    tools:context=".activities.layout.FrameLayoutActivity">
 
     <TextView
         android:layout_width="200dp"

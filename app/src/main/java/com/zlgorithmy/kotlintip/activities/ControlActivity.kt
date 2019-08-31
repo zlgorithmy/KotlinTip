@@ -1,4 +1,4 @@
-package com.zlgorithmy.kotlintip
+package com.zlgorithmy.kotlintip.activities
 
 import android.content.DialogInterface
 import android.net.Uri
@@ -12,9 +12,10 @@ import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.zlgorithmy.kotlintip.R
+import com.zlgorithmy.kotlintip.activities.buttons.ButtonActivity
+import com.zlgorithmy.kotlintip.activities.texts.TextViewsActivity
 import com.zlgorithmy.kotlintip.adapter.KotlinRecycleAdapter
-import com.zlgorithmy.kotlintip.texts.TextViewsActivity
-import com.zlgorithmy.kotlintip.setting.SettingsActivity
 import kotlinx.android.synthetic.main.activity_control.*
 import org.jetbrains.anko.selector
 import org.jetbrains.anko.startActivity
@@ -35,8 +36,8 @@ class ControlActivity : AppCompatActivity() {
     }
 
     private fun initBtn() {
-        button?.setOnClickListener { startActivity<SettingsActivity>() }
         mBtn_TextView?.setOnClickListener { startActivity<TextViewsActivity>() }
+        mBtn_Button?.setOnClickListener { startActivity<ButtonActivity>() }
     }
 
     private fun initRecyclerView() {
@@ -88,7 +89,10 @@ class ControlActivity : AppCompatActivity() {
 
     private fun initSpinner() {
         //val sp = findViewById<View>(R.id.spinner) as Spinner
-        val startAdapter = ArrayAdapter(this, R.layout.support_simple_spinner_dropdown_item, mItems)
+        val startAdapter = ArrayAdapter(
+            this,
+            R.layout.support_simple_spinner_dropdown_item, mItems
+        )
         startAdapter.setDropDownViewResource(R.layout.support_simple_spinner_dropdown_item)
         spinner?.prompt = "请选择"
         spinner?.adapter = startAdapter

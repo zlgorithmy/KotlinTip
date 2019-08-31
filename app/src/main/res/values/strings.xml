@@ -29,4 +29,8 @@
     <string name="ConstraintLayout">约束布局</string>
     <string name="TextView">TextView</string>
     <string name="Button">Button</string>
+    <string name="CheckBox_ON">CheckBox ON</string>
+    <string name="CheckBox_OFF">CheckBox OFF</string>
+    <string name="ToggleButton_off">ToggleButton OFF</string>
+    <string name="ToggleButton_on">ToggleButton ON</string>
 </resources>

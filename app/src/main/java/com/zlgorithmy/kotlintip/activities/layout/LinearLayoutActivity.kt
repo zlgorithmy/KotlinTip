@@ -1,4 +1,4 @@
-package com.zlgorithmy.kotlintip.layout
+package com.zlgorithmy.kotlintip.activities.layout
 
 import android.app.Activity
 import android.os.Bundle

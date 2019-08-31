@@ -2,116 +2,40 @@
 <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    style="@style/TextAppearance.AppCompat.Headline"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/emerald_water"
-    tools:context=".ControlActivity">
+    tools:context=".activities.ControlActivity">
 
     <LinearLayout
-        android:elevation="10dp"
-        android:background="@drawable/ali"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="50dp"
+        android:background="@drawable/ali"
+        android:elevation="10dp"
         android:orientation="vertical">
 
         <Button
-            android:elevation="10dp"
-            android:background="@drawable/candy"
             android:id="@+id/mBtn_TextView"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:background="@drawable/candy"
+            android:elevation="10dp"
             android:gravity="center"
             android:text="@string/TextView"
             android:textSize="30sp" />
 
         <Button
-            android:elevation="20dp"
-            android:id="@+id/button"
+            android:id="@+id/mBtn_Button"
             style="@style/TextAppearance.AppCompat.Headline"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginTop="2dp"
             android:background="@drawable/kyoo_pal"
+            android:elevation="20dp"
             android:gravity="center"
             android:text="@string/Button"
             android:textSize="30sp" />
-
-        <ImageButton
-            android:elevation="20dp"
-            android:id="@+id/imageButton"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ic_alarm_add_black_24dp"
-            android:contentDescription="@string/imageButton"
-            android:tooltipText="@string/hint" />
-
-        <CheckBox
-            android:id="@+id/checkBox"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/pizelex"
-            android:gravity="center"
-            android:text="@string/checkBox"
-            android:textSize="30sp" />
-
-        <RadioGroup
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content">
-
-            <RadioButton
-                style="@style/TextAppearance.AppCompat.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/candy"
-                android:gravity="start"
-                android:text="@string/radioButton"
-                android:textSize="30sp" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/teal_love"
-                android:gravity="center"
-                android:text="@string/radioButton"
-                android:textSize="30sp" />
-
-            <RadioButton
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/opa"
-                android:gravity="end"
-                android:text="@string/radioButton"
-                android:textSize="30sp" />
-        </RadioGroup>
-
-        <ToggleButton
-            android:id="@+id/toggleButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/emerald_water"
-            android:checked="false"
-            android:textOff="@string/off"
-            android:textOn="@string/on"
-            android:textSize="30sp" />
-
-        <Switch
-            android:id="@+id/switch2"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:background="@drawable/ali"
-            android:gravity="center"
-            android:text="@string/Switch"
-            android:textSize="30sp" />
-
-        <com.google.android.material.floatingactionbutton.FloatingActionButton
-            android:id="@+id/floatingActionButton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:clickable="true"
-            android:focusable="true"
-            app:srcCompat="@drawable/kotlin192" />
 
         <View
             android:layout_width="match_parent"

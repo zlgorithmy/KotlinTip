@@ -4,7 +4,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/ali"
-    tools:context=".layout.AbsoluteLayoutActivity">
+    tools:context=".activities.layout.AbsoluteLayoutActivity">
 
     <Button
         android:id="@+id/button"

@@ -1,4 +1,4 @@
-package com.zlgorithmy.kotlintip.setting
+package com.zlgorithmy.kotlintip.activities.setting
 
 import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity

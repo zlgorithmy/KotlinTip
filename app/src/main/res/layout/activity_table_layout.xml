@@ -8,7 +8,7 @@
     android:orientation="vertical"
     android:shrinkColumns="0,1,2"
     android:stretchColumns="0,1,2"
-    tools:context=".layout.TableLayoutActivity">
+    tools:context=".activities.layout.TableLayoutActivity">
 
     <TextView
         style="@style/TextAppearance.AppCompat.Headline"

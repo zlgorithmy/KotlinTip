@@ -16,6 +16,8 @@
     </string>
     <string name="attachment_summary_off">Only download attachments when manually requested</string>
     <string name="scrollview">ScrollView</string>
+    <string name="SwitchON">Switch ON</string>
+    <string name="SwitchOFF">Switch OFF</string>
     <string name="Switch">SWITCH</string>
     <string name="editText">EditText</string>
     <string name="hint">Hint</string>
@@ -37,7 +39,9 @@
     <string name="imageButton">ImageButton</string>
     <string name="chip">Chip</string>
     <string name="checkBox">CheckBox</string>
-    <string name="radioButton">RadioButton</string>
+    <string name="radioButton1">RadioButton1</string>
+    <string name="radioButton2">RadioButton2</string>
+    <string name="radioButton3">RadioButton3</string>
     <string name="off">OFF</string>
     <string name="on">ON</string>
     <string name="view">Widgets</string>

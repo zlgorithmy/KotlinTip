@@ -1,8 +1,9 @@
-package com.zlgorithmy.kotlintip
+package com.zlgorithmy.kotlintip.activities
 
 import android.app.Activity
 import android.os.Bundle
-import com.zlgorithmy.kotlintip.layout.*
+import com.zlgorithmy.kotlintip.R
+import com.zlgorithmy.kotlintip.activities.layout.*
 import kotlinx.android.synthetic.main.activity_layout.*
 import org.jetbrains.anko.startActivity
 
