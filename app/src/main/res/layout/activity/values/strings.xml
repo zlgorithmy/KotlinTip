@@ -37,7 +37,7 @@
     <string name="multiAutoCompleteTextView">MultiAutoCompleteTextView</string>
     <string name="checkedTextView">CheckedTextView</string>
     <string name="imageButton">ImageButton</string>
-    <string name="chip">Chip</string>
+    <string name="chip_entry">Chip Entry</string>
     <string name="checkBox">CheckBox</string>
     <string name="radioButton1">RadioButton1</string>
     <string name="radioButton2">RadioButton2</string>

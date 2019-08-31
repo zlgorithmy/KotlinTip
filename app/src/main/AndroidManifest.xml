@@ -15,8 +15,11 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".activities.buttons.ButtonActivity"
+            android:name=".activities.widgets.WidgetsActivity"
             android:theme="@style/AppTheme2" />
+        <activity
+            android:name=".activities.buttons.ButtonActivity"
+            android:theme="@style/AppTheme1" />
         <activity
             android:name=".activities.texts.TextViewsActivity"
             android:theme="@style/AppTheme1" />

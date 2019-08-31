@@ -1,81 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:background="@drawable/wedding_day_blues"
     tools:context=".activities.LayoutActivity">
 
-    <Button
-        android:id="@+id/Btn_LinearLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#0097A7"
-        android:gravity="center"
-        android:text="@string/LinearLayout"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintTop_toTopOf="parent" />
+    <TextView
+        style="@style/TextView"
+        android:text="@string/layout"
+        tools:ignore="RtlSymmetry" />
 
-    <Button
-        android:id="@+id/Btn_FrameLayout"
+    <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#E64A19"
-        android:gravity="center"
-        android:text="@string/FrameLayout"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Btn_LinearLayout" />
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/memariani"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:scrollbars="none">
 
-    <Button
-        android:id="@+id/Btn_RelativeLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#0288D1"
-        android:gravity="center"
-        android:text="@string/RelativeLayout"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Btn_FrameLayout" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
 
-    <Button
-        android:id="@+id/Btn_TableLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#FFA726"
-        android:gravity="center"
-        android:text="@string/TableLayout"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Btn_RelativeLayout" />
+            <Button
+                android:id="@+id/Btn_LinearLayout"
+                style="@style/Button"
+                android:background="#0097A7"
+                android:text="@string/LinearLayout" />
 
-    <Button
-        android:id="@+id/Btn_AbsoluteLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#5C6BC0"
-        android:gravity="center"
-        android:text="@string/AbsoluteLayout"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Btn_TableLayout" />
+            <Button
+                android:id="@+id/Btn_FrameLayout"
+                style="@style/Button"
+                android:background="#E64A19"
+                android:text="@string/FrameLayout" />
 
-    <Button
-        android:id="@+id/Btn_ConstraintLayout"
-        android:layout_width="match_parent"
-        android:layout_height="0dp"
-        android:layout_weight="1"
-        android:background="#80EC407A"
-        android:gravity="center"
-        android:text="@string/ConstraintLayout"
-        android:textColor="@android:color/background_dark"
-        android:textSize="20sp"
-        app:layout_constraintTop_toBottomOf="@+id/Btn_AbsoluteLayout" />
+            <Button
+                android:id="@+id/Btn_RelativeLayout"
+                style="@style/Button"
+                android:background="#0288D1"
+                android:text="@string/RelativeLayout" />
+
+            <Button
+                android:id="@+id/Btn_TableLayout"
+                style="@style/Button"
+                android:background="#FFA726"
+                android:text="@string/TableLayout" />
+
+            <Button
+                android:id="@+id/Btn_AbsoluteLayout"
+                style="@style/Button"
+                android:background="#5C6BC0"
+                android:gravity="center"
+                android:text="@string/AbsoluteLayout" />
+
+            <Button
+                android:id="@+id/Btn_ConstraintLayout"
+                style="@style/Button"
+                android:background="#80EC407A"
+                android:gravity="center"
+                android:text="@string/ConstraintLayout" />
+        </LinearLayout>
+    </ScrollView>
 </LinearLayout>

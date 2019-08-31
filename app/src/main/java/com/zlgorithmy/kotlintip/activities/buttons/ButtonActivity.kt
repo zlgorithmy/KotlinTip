@@ -3,8 +3,10 @@ package com.zlgorithmy.kotlintip.activities.buttons
 import android.app.Activity
 import android.os.Bundle
 import android.widget.RadioButton
+import com.google.android.material.chip.Chip
 import com.zlgorithmy.kotlintip.R
 import kotlinx.android.synthetic.main.activity_button.*
+import org.jetbrains.anko.find
 import org.jetbrains.anko.toast
 
 class ButtonActivity : Activity() {
@@ -49,8 +51,27 @@ class ButtonActivity : Activity() {
 
         mSwitch.setOnCheckedChangeListener { _, b ->
             toast(if (b) "Switch ON!" else "Switch OFF!")
+            mSwitch.text = getString(if (b) R.string.SwitchON else R.string.SwitchOFF)
         }
 
         mFloatingActionButton.setOnClickListener { toast("This is a FloatingActionButton!") }
+
+        mChipGroup?.setOnCheckedChangeListener { group, i ->
+            if (i in listOf(
+                    R.id.mChip1,
+                    R.id.mChip2,
+                    R.id.mChip3,
+                    R.id.mChip4
+                )
+            ) toast("${find<Chip>(i).text}")
+            when (i) {
+                -1 -> group.background = getDrawable(R.drawable.emerald_water)
+                R.id.mChip1 -> group.background = getDrawable(R.drawable.lemon_twist)
+                R.id.mChip2 -> group.background = getDrawable(R.drawable.evening_sunshine)
+                R.id.mChip3 -> group.background = getDrawable(R.drawable.ali)
+                R.id.mChip4 -> group.background = getDrawable(R.drawable.j_shine)
+                else -> group.background = getDrawable(R.drawable.king_yna)
+            }
+        }
     }
 }

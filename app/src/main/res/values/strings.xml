@@ -33,4 +33,12 @@
     <string name="CheckBox_OFF">CheckBox OFF</string>
     <string name="ToggleButton_off">ToggleButton OFF</string>
     <string name="ToggleButton_on">ToggleButton ON</string>
+    <string name="chip_action">Chip Action</string>
+    <string name="chip_choice">Chip Choice</string>
+    <string name="chip_filter">Chip Filter</string>
+    <string name="radioGroup">RadioGroup</string>
+    <string name="chipGroup">ChipGroup</string>
+    <string name="layout">布局</string>
+    <string name="kotlinTip">KotlinTip</string>
+    <string name="widgets">Widgets</string>
 </resources>

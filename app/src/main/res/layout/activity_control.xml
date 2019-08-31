@@ -1,122 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@drawable/emerald_water"
+    android:orientation="vertical"
     tools:context=".activities.ControlActivity">
 
     <TextView
-        android:id="@+id/text"
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="100dp"
-        android:background="@drawable/king_yna"
-        android:gravity="center"
-        android:text="@string/TextView"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
-
-    <Button
-        android:id="@+id/button"
-        style="@style/TextAppearance.AppCompat.Headline"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="2dp"
-        android:background="@drawable/ic_stat_name2"
-        android:gravity="center"
-        android:text="@string/Button"
-        android:textSize="30sp"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@id/text" />
-
-    <ImageView
-        android:id="@+id/imageView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:contentDescription="@string/one"
-        android:src="@drawable/kotlin192"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
-
-    <androidx.recyclerview.widget.RecyclerView
-        android:id="@+id/recycler_view"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@+id/imageView" />
+        style="@style/TextView"
+        android:text="@string/btn_control"
+        tools:ignore="RtlSymmetry" />
 
     <ScrollView
         android:layout_width="match_parent"
-        android:layout_height="200dp"
-        android:background="@drawable/lemon_twist"
-        app:layout_constraintTop_toBottomOf="@+id/recycler_view">
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ali"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:scrollbars="none">
 
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical">
 
-            <TextView
-                style="@style/TextAppearance.AppCompat.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="@string/scrollview" />
+            <Button
+                android:id="@+id/mBtn_TextView"
+                style="@style/Button"
+                android:background="@drawable/candy"
+                android:text="@string/TextView" />
 
-            <TextView
-                style="@style/TextAppearance.AppCompat.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="@string/one" />
+            <Button
+                android:id="@+id/mBtn_Button"
+                style="@style/Button"
+                android:background="@drawable/kyoo_pal"
+                android:text="@string/Button" />
 
+            <Button
+                android:id="@+id/mBtn_Widgets"
+                style="@style/Button"
+                android:background="@drawable/teal_love"
+                android:text="@string/widgets" />
 
-            <TextView
-                style="@style/TextAppearance.AppCompat.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="@string/two" />
-
-            <TextView
-                style="@style/TextAppearance.AppCompat.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="@string/three" />
-
-
-            <TextView
-                style="@style/TextAppearance.AppCompat.Headline"
-                android:layout_width="match_parent"
-                android:layout_height="50dp"
-                android:gravity="center"
-                android:text="@string/four" />
-
-            <Switch
-                android:id="@+id/switch1"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:text="@string/Switch" />
-
-            <EditText
-                android:id="@+id/editText"
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:autofillHints="@string/hint"
-                android:ems="10"
-                android:inputType="textPersonName"
-                android:labelFor="@+id/switch1"
-                android:text="@string/editText"
-                tools:ignore="LabelFor,UnusedAttribute" />
         </LinearLayout>
-
     </ScrollView>
-
-</androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>

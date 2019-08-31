@@ -7,13 +7,20 @@
     android:orientation="vertical"
     tools:context=".activities.texts.TextViewsActivity">
 
+    <TextView
+        style="@style/TextView"
+        android:text="@string/TextView"
+        tools:ignore="RtlSymmetry" />
+
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:layout_marginBottom="20dp"
+        android:layout_margin="20dp"
+        android:layout_marginTop="5dp"
         android:background="@drawable/ali"
+        android:elevation="20dp"
         android:orientation="vertical"
+        android:paddingTop="20dp"
         android:scrollbars="none">
 
         <LinearLayout
@@ -32,9 +39,9 @@
                 style="@style/TextView"
                 android:background="@drawable/lemon_twist"
                 android:hint="@string/editText"
+                android:imeOptions="actionDone"
                 android:importantForAutofill="no"
-                android:inputType="textPersonName"
-                android:imeOptions="actionDone"/>
+                android:inputType="textPersonName" />
 
             <EditText
                 android:id="@+id/editText2"
@@ -151,38 +158,6 @@
                     android:background="@drawable/quepal"
                     android:hint="@string/textInputEditText" />
             </com.google.android.material.textfield.TextInputLayout>
-
-            <com.google.android.material.chip.ChipGroup
-                android:layout_width="match_parent"
-                android:layout_height="wrap_content"
-                android:background="@drawable/candy">
-
-                <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Entry"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/chip" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Action"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/chip" />
-
-                <com.google.android.material.chip.Chip
-                    style="@style/Widget.MaterialComponents.Chip.Choice"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/chip" />
-
-                <com.google.android.material.chip.Chip
-                    android:id="@+id/chipInGroup2"
-                    style="@style/Widget.MaterialComponents.Chip.Filter"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:text="@string/chip"
-                    android:textAppearance="?android:textAppearanceMedium" />
-            </com.google.android.material.chip.ChipGroup>
         </LinearLayout>
     </ScrollView>
 </LinearLayout>
