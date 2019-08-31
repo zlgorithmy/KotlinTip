@@ -15,7 +15,7 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
-            android:name=".common.TextViewsActivity"
+            android:name=".texts.TextViewsActivity"
             android:theme="@style/AppTheme1" />
         <activity
             android:name=".setting.SettingsActivity"

@@ -6,7 +6,7 @@
     android:background="@drawable/memariani"
     android:orientation="vertical"
     android:scrollbars="none"
-    tools:context=".common.TextViewsActivity">
+    tools:context=".texts.TextViewsActivity">
 
     <ScrollView
         android:layout_width="match_parent"
