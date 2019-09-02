@@ -57,8 +57,9 @@
     </style>
 
     <style name="TextView" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:fontFamily">@font/source_han_serif_cn_semi_bold</item>
         <item name="android:elevation">10dp</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:gravity">start</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>
@@ -73,8 +74,9 @@
     </style>
 
     <style name="Button" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:fontFamily">@font/source_han_serif_cn_regular</item>
         <item name="android:elevation">20dp</item>
-        <item name="android:textSize">30sp</item>
+        <item name="android:textSize">20sp</item>
         <item name="android:gravity">center</item>
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">wrap_content</item>

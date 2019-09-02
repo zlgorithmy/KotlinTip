@@ -8,6 +8,7 @@
     tools:context=".activities.MainActivity">
 
     <TextView
+        android:id="@+id/mTextView"
         style="@style/TextView"
         android:text="@string/kotlinTip"
         tools:ignore="RtlSymmetry" />

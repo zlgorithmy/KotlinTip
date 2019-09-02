@@ -2,6 +2,9 @@ package com.zlgorithmy.kotlintip.activities
 
 import android.app.Activity
 import android.content.Intent
+import android.graphics.Color
+import android.graphics.LinearGradient
+import android.graphics.Shader
 import android.os.Bundle
 import com.zlgorithmy.kotlintip.R
 import kotlinx.android.synthetic.main.activity_main.*

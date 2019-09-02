@@ -9,11 +9,15 @@ import android.view.View
 import android.webkit.WebSettings
 import android.widget.AdapterView
 import android.widget.ArrayAdapter
+import android.widget.RatingBar
+import android.widget.SeekBar
+import android.widget.SeekBar.OnSeekBarChangeListener
 import androidx.recyclerview.widget.DefaultItemAnimator
 import androidx.recyclerview.widget.DividerItemDecoration
 import androidx.recyclerview.widget.LinearLayoutManager
 import com.zlgorithmy.kotlintip.R
 import com.zlgorithmy.kotlintip.adapter.KotlinRecycleAdapter
+import kotlinx.android.synthetic.main.activity_text_views.view.*
 import kotlinx.android.synthetic.main.activity_widgets.*
 import org.jetbrains.anko.selector
 import org.jetbrains.anko.toast
@@ -37,6 +41,11 @@ class WidgetsActivity : Activity() {
         initRecyclerView()
         initSpinner()
         initCardView()
+        initCalendarView()
+        initProcessBar()
+        initSeekBar()
+        initRatingBar()
+        initSearchView()
     }
 
     private fun initVideo() {
@@ -99,9 +108,72 @@ class WidgetsActivity : Activity() {
         }
     }
 
+    private fun initCalendarView() {
+        mCalendarView.setOnDateChangeListener { _, i, i2, i3 ->
+            toast("$i-${i2 + 1}-$i3")
+        }
+    }
+
     private fun initCardView() {
         mCardView?.setOnClickListener {
             toast("CardView")
+        }
+    }
+
+    private fun initProcessBar() {
+        Thread(
+            Runnable {
+                for (i in 1..10) {
+                    if (mProgressBar1.progress < 100) {
+                        mProgressBar1.setProgress(mProgressBar1.progress + 10, true)
+                    }
+                    mProgressBar2.setProgress(i * 10, true)
+                    Thread.sleep(1000)
+                }
+            }).start()
+    }
+
+    private fun initSeekBar() {
+        mSeekBar1.setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
+            override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+                toast("$p1 $p2")
+            }
+
+            override fun onStartTrackingTouch(p0: SeekBar?) {
+                toast("onStartTrackingTouch")
+            }
+
+            override fun onStopTrackingTouch(p0: SeekBar?) {
+                toast("onStopTrackingTouch")
+            }
+        })
+        mSeekBar2.setOnSeekBarChangeListener(object : OnSeekBarChangeListener {
+            override fun onProgressChanged(p0: SeekBar?, p1: Int, p2: Boolean) {
+                toast("$p1 $p2")
+            }
+
+            override fun onStartTrackingTouch(p0: SeekBar?) {
+                toast("onStartTrackingTouch")
+            }
+
+            override fun onStopTrackingTouch(p0: SeekBar?) {
+                toast("onStopTrackingTouch")
+            }
+        })
+    }
+
+    private fun initRatingBar() {
+        mRatingBar.numStars = 10
+        mRatingBar.onRatingBarChangeListener =
+            RatingBar.OnRatingBarChangeListener { p0, p1, p2 ->
+                toast("${p0.numStars} $p1 $p2")
+            }
+    }
+
+    private fun initSearchView() {
+        mSearchView.setIconifiedByDefault(false)
+        mSearchView.setOnQueryTextFocusChangeListener { view, b ->
+            toast("${view.text.text} $b")
         }
     }
 

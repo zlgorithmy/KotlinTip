@@ -46,6 +46,11 @@
                 android:background="@drawable/teal_love"
                 android:text="@string/widgets" />
 
+            <Button
+                style="@style/Button"
+                android:background="@drawable/opa"
+                android:text="@string/containers" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

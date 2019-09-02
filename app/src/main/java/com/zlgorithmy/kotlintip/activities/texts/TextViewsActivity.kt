@@ -1,6 +1,7 @@
 package com.zlgorithmy.kotlintip.activities.texts
 
 import android.app.Activity
+import android.graphics.Typeface
 import android.os.Bundle
 import android.text.Editable
 import android.text.TextWatcher
@@ -31,8 +32,10 @@ class TextViewsActivity : Activity() {
             }
         })
         editText.setOnEditorActionListener { p0, p1, p2 ->
-            toast( "${p0.text} $p1 $p2")
+            toast("${p0.text} $p1 $p2")
             true
         }
+        var iconFont = Typeface.createFromAsset(assets, "SourceHanSerifCN/SourceHanSerifCN-SemiBold.otf")
+        mTextView?.typeface = iconFont
     }
 }
