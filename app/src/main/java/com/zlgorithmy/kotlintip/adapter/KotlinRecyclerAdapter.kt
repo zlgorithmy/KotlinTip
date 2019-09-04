@@ -14,6 +14,7 @@ import androidx.recyclerview.widget.RecyclerView
 import com.zlgorithmy.kotlintip.R
 import java.util.*
 
+@ExperimentalUnsignedTypes
 @TargetApi(Build.VERSION_CODES.O)
 class KotlinRecyclerAdapter(context: Context, private var mColors: Map<String, Int>) :
     RecyclerView.Adapter<KotlinRecyclerAdapter.ViewHolder>() {
@@ -46,6 +47,7 @@ class KotlinRecyclerAdapter(context: Context, private var mColors: Map<String, I
         var spinner: Spinner = itemView!!.findViewById(R.id.mSpinner)
     }
 
+    @ExperimentalUnsignedTypes
     internal inner class OnItemSelectedListener(holder: ViewHolder) :
         AdapterView.OnItemSelectedListener {
         private var mHolder = holder
@@ -53,13 +55,9 @@ class KotlinRecyclerAdapter(context: Context, private var mColors: Map<String, I
 
         }
 
-        @ExperimentalUnsignedTypes
         override fun onItemSelected(parent: AdapterView<*>?, view: View?, position: Int, id: Long) {
-            //mHolder.text.text = (view as TextView).text
             val color = mColors.getOrDefault((view as TextView).text.toString(), mColors.values.random())
-
-            mHolder.text.text = color.toULong().toString(16).replace("ffffffffff", "#").toUpperCase(Locale.getDefault())
-
+            mHolder.text.text = color.toUInt().toString(16).toUpperCase(Locale.getDefault()).replaceFirst("FF", "#")
             mHolder.image.setBackgroundColor(color)
         }
     }

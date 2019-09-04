@@ -41,4 +41,16 @@
     <string name="layout">布局</string>
     <string name="kotlinTip">KotlinTip</string>
     <string name="widgets">Widgets</string>
+    <string name="toBottom">跳转到底部</string>
+    <string name="toSpinner">跳转到Spinner</string>
+    <string name="toRecyclerView">跳转到RecyclerView</string>
+    <string name="toRight">跳转到最右</string>
+    <string name="toStart">跳转到开始</string>
+    <string name="toCenter">跳转到中间</string>
+    <string name="items0">Item1</string>
+    <string name="items1">Item2</string>
+    <string name="items2">Item3</string>
+    <string name="items3">Item4</string>
+    <string name="items4">Item5</string>
+    <string name="items5">Item6</string>
 </resources>
