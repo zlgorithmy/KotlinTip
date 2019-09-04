@@ -14,15 +14,8 @@
         tools:ignore="RtlSymmetry" />
 
     <ScrollView
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="20dp"
-        android:layout_marginTop="5dp"
-        android:background="@drawable/ali"
-        android:elevation="20dp"
-        android:orientation="vertical"
-        android:paddingTop="20dp"
-        android:scrollbars="none">
+        style="@style/baseView"
+        android:background="@drawable/ali">
 
         <LinearLayout
             android:layout_width="match_parent"

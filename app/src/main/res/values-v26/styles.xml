@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="baseView">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:elevation">20dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:paddingVertical">20dp</item>
+    </style>
+</resources>

@@ -13,14 +13,8 @@
         tools:ignore="RtlSymmetry" />
 
     <TableLayout
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:layout_margin="20dp"
-        android:layout_marginTop="0dp"
+        style="@style/baseView"
         android:background="@drawable/sel"
-        android:elevation="20dp"
-        android:orientation="vertical"
-        android:padding="10dp"
         android:shrinkColumns="0,1,2"
         android:stretchColumns="0,1,2">
 
