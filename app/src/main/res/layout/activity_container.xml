@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/emerald_water"
+    android:orientation="vertical"
+    tools:context=".activities.containers.ContainerActivity">
+
+    <TextView
+        style="@style/TextView"
+        android:text="@string/containers"
+        tools:ignore="RtlSymmetry" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="20dp"
+        android:layout_marginTop="0dp"
+        android:background="@drawable/ali"
+        android:elevation="20dp"
+        android:orientation="vertical"
+        android:paddingTop="20dp"
+        android:scrollbars="none">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Spinner
+                android:id="@+id/mSpinner"
+                style="@style/Preference.DropDown"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/ali"
+                android:elevation="5dp"
+                android:entries="@array/color_items"
+                android:popupBackground="@drawable/opa"
+                android:prompt="@string/spinner"
+                tools:ignore="RtlSymmetry" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                tools:itemCount="5"
+                tools:listitem="@layout/items_recycler_view"
+                android:id="@+id/mRecyclerView"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:background="@drawable/memariani"
+                android:elevation="5dp" />
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

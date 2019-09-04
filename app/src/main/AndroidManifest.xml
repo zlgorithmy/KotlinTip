@@ -14,6 +14,7 @@
         android:theme="@style/AppTheme"
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
+        <activity android:name=".activities.containers.ContainerActivity" />
         <activity
             android:name=".activities.widgets.WidgetsActivity"
             android:theme="@style/AppTheme2" />

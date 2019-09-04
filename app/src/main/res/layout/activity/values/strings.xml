@@ -44,10 +44,11 @@
     <string name="radioButton3">RadioButton3</string>
     <string name="off">OFF</string>
     <string name="on">ON</string>
-    <string name="view">Widgets</string>
+    <string name="view">View</string>
     <string name="cardView">CardView</string>
     <string name="todo">TODO</string>
     <string name="kotlin">Kotlin</string>
     <string name="containers">Containers</string>
     <string name="textInputEditText">TextInputEditText</string>
+    <string name="spinner">Spinner</string>
 </resources>

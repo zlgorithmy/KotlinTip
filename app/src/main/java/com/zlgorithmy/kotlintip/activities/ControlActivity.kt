@@ -4,6 +4,7 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import com.zlgorithmy.kotlintip.R
 import com.zlgorithmy.kotlintip.activities.buttons.ButtonActivity
+import com.zlgorithmy.kotlintip.activities.containers.ContainerActivity
 import com.zlgorithmy.kotlintip.activities.texts.TextViewsActivity
 import com.zlgorithmy.kotlintip.activities.widgets.WidgetsActivity
 import kotlinx.android.synthetic.main.activity_control.*
@@ -20,6 +21,7 @@ class ControlActivity : AppCompatActivity() {
         mBtn_TextView?.setOnClickListener { startActivity<TextViewsActivity>() }
         mBtn_Button?.setOnClickListener { startActivity<ButtonActivity>() }
         mBtn_Widgets?.setOnClickListener { startActivity<WidgetsActivity>() }
+        mBtn_containers?.setOnClickListener { startActivity<ContainerActivity>() }
     }
 
     private fun initView() {

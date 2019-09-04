@@ -168,7 +168,7 @@
                 android:background="@drawable/love_couple"
                 android:popupBackground="@drawable/teal_love"
                 android:popupElevation="10dp"
-                android:prompt="@string/scrollview" />
+                style="@android:style/Widget.Holo.Spinner" />
 
             <TextView
                 android:id="@+id/mSpinnerText"
