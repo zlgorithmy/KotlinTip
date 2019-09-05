@@ -15,6 +15,10 @@
         android:usesCleartextTraffic="true"
         tools:ignore="GoogleAppIndexingWarning">
         <activity
+            android:name=".activities.containers.AppBarActivity"
+            android:theme="@style/AppTheme2" />
+        <activity android:name=".activities.containers.ViewPagerActivity" />
+        <activity
             android:name=".activities.containers.ContainerActivity"
             android:theme="@style/AppTheme2" />
         <activity

@@ -17,6 +17,7 @@ import androidx.recyclerview.widget.LinearLayoutManager
 import com.zlgorithmy.kotlintip.R
 import com.zlgorithmy.kotlintip.adapter.KotlinRecyclerAdapter
 import kotlinx.android.synthetic.main.activity_container.*
+import org.jetbrains.anko.startActivity
 import org.jetbrains.anko.toast
 import java.util.*
 import kotlin.collections.set
@@ -34,6 +35,8 @@ class ContainerActivity : Activity() {
         initSpinner()
         initRecyclerView()
         initScrollView()
+        initViewPager()
+        initAppBar()
     }
 
     private fun initSpinner() {
@@ -116,9 +119,16 @@ class ContainerActivity : Activity() {
         }
     }
 
+    private fun initViewPager() {
+        mBtn_ViewPager?.setOnClickListener { startActivity<ViewPagerActivity>() }
+    }
 
-    internal inner class OnItemSelectedListener : AdapterView.OnItemSelectedListener {
-        private var mIsFirstSelect = true
+    private fun initAppBar() {
+        mBtn_AppBar?.setOnClickListener { startActivity<AppBarActivity>() }
+    }
+
+
+    internal inner class OnItemSelectedListener(private var mIsFirstSelect: Boolean = true) : AdapterView.OnItemSelectedListener {
         override fun onNothingSelected(parent: AdapterView<*>?) {
             toast("onNothingSelected")
         }

@@ -267,11 +267,6 @@
                         style="@style/TextView"
                         android:background="@drawable/lemon_twist"
                         android:text="@string/items5" />
-
-                    <TextView
-                        style="@style/TextView"
-                        android:background="@drawable/candy"
-                        android:text="@string/items0" />
                 </LinearLayout>
 
             </androidx.core.widget.NestedScrollView>
@@ -304,6 +299,18 @@
                     android:elevation="20dp"
                     android:src="@drawable/kotlin192" />
             </LinearLayout>
+
+            <Button
+                android:id="@+id/mBtn_ViewPager"
+                style="@style/Button"
+                android:background="@drawable/sel"
+                android:text="@string/viewPager" />
+
+            <Button
+                android:id="@+id/mBtn_AppBar"
+                style="@style/Button"
+                android:background="@drawable/ali_c"
+                android:text="@string/viewPager" />
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

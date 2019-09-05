@@ -1,6 +1,16 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <style name="baseView0">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:layout_marginHorizontal">20dp</item>
+        <item name="android:layout_marginBottom">20dp</item>
+        <item name="android:elevation">20dp</item>
+        <item name="android:orientation">vertical</item>
+        <item name="android:scrollbars">none</item>
+        <item name="android:paddingBottom">20dp</item>
+    </style>
     <style name="baseView">
         <item name="android:layout_width">match_parent</item>
         <item name="android:layout_height">match_parent</item>
@@ -10,5 +20,17 @@
         <item name="android:orientation">vertical</item>
         <item name="android:scrollbars">none</item>
         <item name="android:paddingVertical">20dp</item>
+    </style>
+
+    <style name="nestTextView" parent="TextAppearance.AppCompat.Headline">
+        <item name="android:fontFamily">@font/source_han_serif_cn_semi_bold</item>
+        <item name="android:elevation">10dp</item>
+        <item name="android:textSize">20sp</item>
+        <item name="android:gravity">center</item>
+        <item name="android:padding">10dp</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColorHint">@color/blue_grey</item>
+        <item name="android:layout_marginVertical">20dp</item>
     </style>
 </resources>
