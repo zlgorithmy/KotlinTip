@@ -5,11 +5,13 @@ import androidx.appcompat.app.AppCompatActivity
 import com.zlgorithmy.kotlintip.R
 import com.zlgorithmy.kotlintip.activities.buttons.ButtonActivity
 import com.zlgorithmy.kotlintip.activities.containers.ContainerActivity
+import com.zlgorithmy.kotlintip.activities.navigation.NavigationActivity
 import com.zlgorithmy.kotlintip.activities.texts.TextViewsActivity
 import com.zlgorithmy.kotlintip.activities.widgets.WidgetsActivity
 import kotlinx.android.synthetic.main.activity_control.*
 import org.jetbrains.anko.startActivity
 
+@ExperimentalUnsignedTypes
 class ControlActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -22,6 +24,7 @@ class ControlActivity : AppCompatActivity() {
         mBtn_Button?.setOnClickListener { startActivity<ButtonActivity>() }
         mBtn_Widgets?.setOnClickListener { startActivity<WidgetsActivity>() }
         mBtn_containers?.setOnClickListener { startActivity<ContainerActivity>() }
+        mBtn_navigation?.setOnClickListener { startActivity<NavigationActivity>() }
     }
 
     private fun initView() {

@@ -45,6 +45,12 @@
                 android:background="@drawable/opa"
                 android:text="@string/containers" />
 
+            <Button
+                android:id="@+id/mBtn_navigation"
+                style="@style/Button"
+                android:background="@drawable/evening_sunshine"
+                android:text="@string/navigation" />
+
         </LinearLayout>
     </ScrollView>
 </LinearLayout>

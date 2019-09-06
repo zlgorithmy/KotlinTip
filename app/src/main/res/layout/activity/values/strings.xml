@@ -49,6 +49,7 @@
     <string name="todo">TODO</string>
     <string name="kotlin">Kotlin</string>
     <string name="containers">Containers</string>
+    <string name="navigation">Navigation</string>
     <string name="textInputEditText">TextInputEditText</string>
     <string name="spinner">Spinner</string>
 </resources>

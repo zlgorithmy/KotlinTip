@@ -51,4 +51,9 @@
         <item>@color/grey</item>
         <item>@color/blue_grey</item>
     </array>
+    <array name="ids">
+        <item name="text_view_1" type="id">text_view_1</item>
+        <item name="text_view_2" type="id">text_view_2</item>
+        <item name="text_view_3" type="id">text_view_3</item>
+    </array>
 </resources>
